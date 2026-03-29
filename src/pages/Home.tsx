@@ -66,7 +66,29 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="bg-white">
       {/* ── HERO ── */}
-      <section className="bg-brand-dark pt-16 pb-0 overflow-hidden">
+      <section className="relative isolate bg-brand-dark pt-16 pb-0 overflow-hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[26rem] overflow-hidden">
+          <div className="neon-hero-glow neon-hero-glow-blue" />
+          <div className="neon-hero-glow neon-hero-glow-purple" />
+          <div className="neon-pipe-grid">
+            <div className="neon-pipe neon-pipe-blue">
+              <div className="neon-pipe-node neon-pipe-node-blue neon-pipe-node-delay-1" />
+            </div>
+            <div className="neon-pipe neon-pipe-cyan neon-pipe-short">
+              <div className="neon-pipe-node neon-pipe-node-cyan neon-pipe-node-delay-2" />
+            </div>
+            <div className="neon-pipe neon-pipe-purple">
+              <div className="neon-pipe-node neon-pipe-node-purple neon-pipe-node-delay-3" />
+            </div>
+            <div className="neon-pipe neon-pipe-blue neon-pipe-short">
+              <div className="neon-pipe-node neon-pipe-node-blue neon-pipe-node-delay-4" />
+            </div>
+            <div className="neon-pipe neon-pipe-purple">
+              <div className="neon-pipe-node neon-pipe-node-purple neon-pipe-node-delay-5" />
+            </div>
+          </div>
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/5 via-brand-blue/5 to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left */}
